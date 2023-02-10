@@ -69,18 +69,18 @@ const EditableTable = (props) => {
             </th>
           </tr>
           <tr>
-            <th onClick={() => handleSort("name")}>
+            <th >
               Name &nbsp;&nbsp;&nbsp;&nbsp;
-              <AiOutlineSortAscending />{" "}
+              <AiOutlineSortAscending onClick={() => handleSort("name")}/>{" "}
             </th>
 
-            <th onClick={() => handleSort("email")}>
+            <th >
               Email &nbsp;&nbsp;&nbsp;&nbsp;
-              <AiOutlineSortAscending />
+              <AiOutlineSortAscending onClick={() => handleSort("email")}/>
             </th>
-            <th onClick={() => handleSort("position")}>
+            <th >
               Position &nbsp;&nbsp;&nbsp;&nbsp;
-              <AiOutlineSortAscending />
+              <AiOutlineSortAscending onClick={() => handleSort("position")} />
             </th>
           </tr>
         </thead>
